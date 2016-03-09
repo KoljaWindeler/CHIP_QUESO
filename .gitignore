@@ -46,5 +46,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-**/*.b#[1-9]
-*.s#?
+*.b#*
+*.s#*
