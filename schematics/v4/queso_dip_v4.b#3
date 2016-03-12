@@ -136,7 +136,7 @@
 <text x="3.3165" y="47.8942" size="1.016" layer="25" font="vector" ratio="12" align="center">QUESO
 DIP </text>
 <text x="5.0049" y="49.2006" size="1.27" layer="22" font="vector" ratio="12" rot="MR0" align="top-left">JKW
-v0.3</text>
+v0.4</text>
 <wire x1="34" y1="50" x2="24" y2="50" width="0.6096" layer="21"/>
 <wire x1="24" y1="50" x2="24" y2="42.3" width="0.6096" layer="21"/>
 <wire x1="24" y1="42.3" x2="34" y2="42.3" width="0.6096" layer="21"/>
@@ -152,12 +152,13 @@ v0.3</text>
 0 PS Passive Hub - Close D</text>
 <text x="7.3" y="38.4" size="1.778" layer="25">PS2</text>
 <text x="12.2" y="20.2" size="1.778" layer="25" rot="R270">PS1</text>
-<circle x="1.5" y="44.6" radius="1.204159375" width="0.254" layer="26"/>
+<circle x="1.45" y="44.6" radius="1.204159375" width="0.254" layer="26"/>
 <circle x="4" y="42" radius="1.204159375" width="0.254" layer="26"/>
 <circle x="37" y="44.6" radius="1.204159375" width="0.254" layer="26"/>
-<circle x="39.6" y="44.6" radius="1.204159375" width="0.254" layer="26"/>
+<circle x="39.55" y="44.6" radius="1.204159375" width="0.254" layer="26"/>
 <circle x="37" y="19.2" radius="1.204159375" width="0.254" layer="26"/>
 <text x="24.4" y="27.2" size="1.27" layer="25">A  4  3  2  1</text>
+<circle x="4" y="31.9" radius="1.204159375" width="0.254" layer="26"/>
 </plain>
 <libraries>
 <library name="con-lsta">

@@ -4272,58 +4272,58 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$2" library="logo" package="LOGO" value="LOGO" x="36.5379" y="46.0248"/>
 <element name="U$5" library="logo" package="LOGO" value="LOGO" x="39.0906" y="46.101" rot="MR0"/>
 <element name="U$1" library="imcom" package="FE1.1S_SSOP-28" value="FE1.1S" x="14.2393" y="25.9031" rot="MR0"/>
-<element name="U$3" library="imcom" package="USB_TYPE_A_FEMALE_TH" value="USB_TYPE_A_FEMALE_TH" x="26.0412" y="1.1985" smashed="yes">
+<element name="U$3" library="imcom" package="USB_TYPE_A_FEMALE_TH" value="amp 787616-1" x="26.0412" y="1.1985" smashed="yes">
 <attribute name="VALUE" x="21.5411" y="3.5785" size="1.27" layer="27"/>
 </element>
-<element name="U$4" library="imcom" package="USB_TYPE_A_FEMALE_TH" value="USB_TYPE_A_FEMALE_TH" x="26.7065" y="48.7504" rot="R180"/>
-<element name="U$6" library="imcom" package="USB_TYPE_A_FEMALE_TH" value="USB_TYPE_A_FEMALE_TH" x="35.7124" y="33.33" rot="R90"/>
-<element name="U$7" library="imcom" package="USB_TYPE_A_FEMALE_TH" value="USB_TYPE_A_FEMALE_TH" x="35.6489" y="16.66" smashed="yes" rot="R90">
+<element name="U$4" library="imcom" package="USB_TYPE_A_FEMALE_TH" value="amp 787616-1" x="26.7065" y="48.7504" rot="R180"/>
+<element name="U$6" library="imcom" package="USB_TYPE_A_FEMALE_TH" value="amp 787616-1" x="35.7124" y="33.33" rot="R90"/>
+<element name="U$7" library="imcom" package="USB_TYPE_A_FEMALE_TH" value="amp 787616-1" x="35.6489" y="16.66" smashed="yes" rot="R90">
 <attribute name="VALUE" x="33.2689" y="12.1599" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="U$8" library="SparkFun-Connectors" package="USB-MINIB" value="USB-MINIB-5PIN" x="11.9507" y="45.2501" rot="R270"/>
+<element name="U$8" library="SparkFun-Connectors" package="USB-MINIB" value="10118194-0001LF" x="11.9507" y="45.2501" rot="R270"/>
 <element name="PAD1" library="wirepad" package="3,17/1,3" value="WIREPAD3,17/1,3" x="8.5" y="3"/>
 <element name="PAD2" library="wirepad" package="3,17/1,3" value="WIREPAD3,17/1,3" x="13.5" y="3"/>
 <element name="U$9" library="power_supply" package="MP1584EN" value="MP1584EN" x="6.3" y="35" rot="R270"/>
 <element name="JP1" library="jumper" package="JP2" value="" x="10.8" y="11.5" smashed="yes">
 <attribute name="VALUE" x="7.244" y="7.182" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="F1" library="m-pad-2.1" package="1210" value="" x="27.4" y="24.4" rot="MR90"/>
-<element name="F2" library="m-pad-2.1" package="1210" value="" x="26" y="14.5" smashed="yes">
+<element name="F1" library="m-pad-2.1" package="1210" value="PTS12066V110" x="27.4" y="24.4" rot="MR90"/>
+<element name="F2" library="m-pad-2.1" package="1210" value="PTS12066V110" x="26" y="14.5" smashed="yes">
 <attribute name="VALUE" x="24.603" y="11.579" size="1.27" layer="27"/>
 </element>
-<element name="F3" library="m-pad-2.1" package="1210" value="" x="27.7" y="39" rot="R90"/>
-<element name="F4" library="m-pad-2.1" package="1210" value="" x="27.2" y="10.1" smashed="yes" rot="R270">
+<element name="F3" library="m-pad-2.1" package="1210" value="PTS12066V110" x="27.7" y="39" rot="R90"/>
+<element name="F4" library="m-pad-2.1" package="1210" value="PTS12066V110" x="27.2" y="10.1" smashed="yes" rot="R270">
 <attribute name="VALUE" x="24.279" y="11.497" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C1" library="rcl" package="C1210" value="10uF" x="21.1" y="10.6"/>
-<element name="C2" library="rcl" package="C1210" value="10uF" x="26.5" y="14.4" rot="MR0"/>
-<element name="C3" library="rcl" package="C1210" value="10uF" x="24.2" y="24.4" rot="MR270"/>
-<element name="C4" library="rcl" package="C1210" value="10uF" x="27.4" y="38.7" rot="MR270"/>
+<element name="C1" library="rcl" package="C1210" value="VJ1210V106ZXJTW1BC" x="21.1" y="10.6"/>
+<element name="C2" library="rcl" package="C1210" value="VJ1210V106ZXJTW1BC" x="26.5" y="14.4" rot="MR0"/>
+<element name="C3" library="rcl" package="C1210" value="VJ1210V106ZXJTW1BC" x="24.2" y="24.4" rot="MR270"/>
+<element name="C4" library="rcl" package="C1210" value="VJ1210V106ZXJTW1BC" x="27.4" y="38.7" rot="MR270"/>
 <element name="C5" library="rcl" package="C1210" value="10uF" x="23.7" y="29.4" smashed="yes" rot="R180"/>
 <element name="C6" library="rcl" package="C1210" value="10uF" x="18" y="30.3" rot="R270"/>
 <element name="R1" library="rcl" package="R0805" value="2.7k" x="11.9" y="17.7" rot="MR0"/>
 <element name="R3" library="rcl" package="R0805" value="10k" x="12.9" y="29.6" smashed="yes" rot="R90"/>
 <element name="R4" library="rcl" package="R0805" value="10k" x="10.6" y="29.6" smashed="yes" rot="R90"/>
-<element name="LED1" library="led" package="CHIP-LED0805" value="" x="21.5" y="36.5" smashed="yes" rot="R180">
+<element name="LED1" library="led" package="CHIP-LED0805" value="150080BS75000" x="21.5" y="36.5" smashed="yes" rot="R180">
 <attribute name="VALUE" x="18.96" y="37.77" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="LED2" library="led" package="CHIP-LED0805" value="" x="19" y="36.5" smashed="yes">
+<element name="LED2" library="led" package="CHIP-LED0805" value="150080BS75000" x="19" y="36.5" smashed="yes">
 <attribute name="VALUE" x="21.54" y="35.23" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="LED3" library="led" package="CHIP-LED0805" value="" x="16.5" y="36.5" smashed="yes">
+<element name="LED3" library="led" package="CHIP-LED0805" value="150080BS75000" x="16.5" y="36.5" smashed="yes">
 <attribute name="VALUE" x="19.04" y="35.23" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="LED4" library="led" package="CHIP-LED0805" value="" x="14" y="36.5" smashed="yes" rot="R180">
+<element name="LED4" library="led" package="CHIP-LED0805" value="150080BS75000" x="14" y="36.5" smashed="yes" rot="R180">
 <attribute name="VALUE" x="11.46" y="37.77" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="LED5" library="led" package="CHIP-LED0805" value="" x="11.5" y="36.5" smashed="yes">
+<element name="LED5" library="led" package="CHIP-LED0805" value="150080BS75000" x="11.5" y="36.5" smashed="yes">
 <attribute name="VALUE" x="14.04" y="35.23" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R5" library="rcl" package="R0805" value="330R" x="18.5" y="36.6" smashed="yes" rot="MR270">
+<element name="R5" library="rcl" package="R0805" value="ERJ-6ENF3300V" x="18.5" y="36.6" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="21.04" y="37.235" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R6" library="rcl" package="R0805" value="330R" x="16.3" y="35.9" rot="MR270"/>
-<element name="R7" library="rcl" package="R0805" value="330R" x="7.1" y="36.6" rot="MR270"/>
+<element name="R6" library="rcl" package="R0805" value="ERJ-6ENF3300V" x="16.3" y="35.9" rot="MR270"/>
+<element name="R7" library="rcl" package="R0805" value="ERJ-6ENF3300V" x="7.1" y="36.6" rot="MR270"/>
 <element name="U1" library="Volks73-NXPSemiconductors" package="SOT-143B" value="PRTR5V0U2X" x="26.7" y="18.3">
 <attribute name="MANUFACTURER" value="NXP Semiconductors" x="26.7" y="18.3" size="1.778" layer="27" display="off"/>
 <attribute name="OPERATING_TEMPERATURE" value="-40C ~ 85C" x="26.7" y="18.3" size="1.778" layer="27" display="off"/>

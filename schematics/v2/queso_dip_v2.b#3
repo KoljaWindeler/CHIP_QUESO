@@ -144,8 +144,6 @@ DIP </text>
 <wire x1="16" y1="7.5" x2="16" y2="0.8" width="0.6096" layer="21"/>
 <wire x1="16" y1="0.8" x2="6" y2="0.8" width="0.6096" layer="21"/>
 <wire x1="6" y1="0.8" x2="6" y2="7.5" width="0.6096" layer="21"/>
-<text x="-2.6" y="10.8" size="1.778" layer="25" rot="R90">Ordered 2016/03/01 at OSH
-Ordered 2016/03/02 at Seeed</text>
 </plain>
 <libraries>
 <library name="con-lsta">

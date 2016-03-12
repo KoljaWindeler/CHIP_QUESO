@@ -134,12 +134,10 @@
 <wire x1="0" y1="0" x2="41" y2="0" width="0.4064" layer="20"/>
 <text x="5.0049" y="49.2006" size="1.27" layer="30" font="vector" ratio="12" rot="MR0" align="top-left">JKW
 v3.9</text>
-<text x="1.1165" y="48.7942" size="0.8128" layer="1" font="vector" ratio="12" align="top-left">QUESO
+<text x="1.1165" y="48.7942" size="0.8128" layer="25" font="vector" ratio="12" align="top-left">QUESO
 DIP </text>
-<text x="5.0049" y="49.2006" size="1.27" layer="16" font="vector" ratio="12" rot="MR0" align="top-left">JKW
-v0.1</text>
-<text x="1.1292" y="48.7942" size="0.8128" layer="29" font="vector" ratio="12" align="top-left">SALSA
-DIP </text>
+<text x="5.0049" y="49.2006" size="1.27" layer="22" font="vector" ratio="12" rot="MR0" align="top-left">JKW
+v0.2</text>
 <wire x1="6" y1="7.5" x2="16" y2="7.5" width="0.6096" layer="21"/>
 <wire x1="16" y1="7.5" x2="16" y2="0.8" width="0.6096" layer="21"/>
 <wire x1="16" y1="0.8" x2="6" y2="0.8" width="0.6096" layer="21"/>
@@ -4299,8 +4297,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C2" library="rcl" package="C1210" value="VJ1210V106ZXJTW1BC" x="26.5" y="14.4" rot="MR0"/>
 <element name="C3" library="rcl" package="C1210" value="VJ1210V106ZXJTW1BC" x="24.2" y="24.4" rot="MR270"/>
 <element name="C4" library="rcl" package="C1210" value="VJ1210V106ZXJTW1BC" x="27.4" y="38.7" rot="MR270"/>
-<element name="C5" library="rcl" package="C1210" value="10uF" x="23.7" y="29.4" smashed="yes" rot="R180"/>
-<element name="C6" library="rcl" package="C1210" value="10uF" x="18" y="30.3" rot="R270"/>
+<element name="C5" library="rcl" package="C1210" value="VJ1210V106ZXJTW1BC" x="23.7" y="29.4" smashed="yes" rot="R180"/>
+<element name="C6" library="rcl" package="C1210" value="VJ1210V106ZXJTW1BC" x="18" y="30.3" rot="R270"/>
 <element name="R1" library="rcl" package="R0805" value="2.7k" x="11.9" y="17.7" rot="MR0"/>
 <element name="R3" library="rcl" package="R0805" value="10k" x="12.9" y="29.6" smashed="yes" rot="R90"/>
 <element name="R4" library="rcl" package="R0805" value="10k" x="10.6" y="29.6" smashed="yes" rot="R90"/>
@@ -4324,7 +4322,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="R6" library="rcl" package="R0805" value="ERJ-6ENF3300V" x="16.3" y="35.9" rot="MR270"/>
 <element name="R7" library="rcl" package="R0805" value="ERJ-6ENF3300V" x="7.1" y="36.6" rot="MR270"/>
-<element name="U1" library="Volks73-NXPSemiconductors" package="SOT-143B" value="PRTR5V0U2X" x="26.7" y="18.3">
+<element name="U1" library="Volks73-NXPSemiconductors" package="SOT-143B" value="PRTR5V0U2X,215" x="26.7" y="18.3">
 <attribute name="MANUFACTURER" value="NXP Semiconductors" x="26.7" y="18.3" size="1.778" layer="27" display="off"/>
 <attribute name="OPERATING_TEMPERATURE" value="-40C ~ 85C" x="26.7" y="18.3" size="1.778" layer="27" display="off"/>
 <attribute name="PART_NUMBER" value="PRTR5V0U2X,215" x="26.7" y="18.3" size="1.778" layer="27" display="off"/>
@@ -4350,7 +4348,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="SUPPLIER_NAME" value="Digi-Key" x="26.7" y="18.3" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE_CLAMPING" value="-" x="26.7" y="18.3" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U2" library="Volks73-NXPSemiconductors" package="SOT-143B" value="PRTR5V0U2X" x="26" y="33.4" smashed="yes">
+<element name="U2" library="Volks73-NXPSemiconductors" package="SOT-143B" value="PRTR5V0U2X,215" x="26" y="33.4" smashed="yes">
 <attribute name="MANUFACTURER" value="NXP Semiconductors" x="26" y="33.4" size="1.778" layer="27" display="off"/>
 <attribute name="OPERATING_TEMPERATURE" value="-40C ~ 85C" x="26" y="33.4" size="1.778" layer="27" display="off"/>
 <attribute name="PART_NUMBER" value="PRTR5V0U2X,215" x="26" y="33.4" size="1.778" layer="27" display="off"/>
@@ -4376,7 +4374,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="SUPPLIER_NAME" value="Digi-Key" x="26" y="33.4" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE_CLAMPING" value="-" x="26" y="33.4" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U3" library="Volks73-NXPSemiconductors" package="SOT-143B" value="PRTR5V0U2X" x="23.2" y="40.1" smashed="yes" rot="R90">
+<element name="U3" library="Volks73-NXPSemiconductors" package="SOT-143B" value="PRTR5V0U2X,215" x="23.2" y="40.1" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="NXP Semiconductors" x="23.2" y="40.1" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OPERATING_TEMPERATURE" value="-40C ~ 85C" x="23.2" y="40.1" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_NUMBER" value="PRTR5V0U2X,215" x="23.2" y="40.1" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4402,7 +4400,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="SUPPLIER_NAME" value="Digi-Key" x="23.2" y="40.1" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VOLTAGE_CLAMPING" value="-" x="23.2" y="40.1" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U4" library="Volks73-NXPSemiconductors" package="SOT-143B" value="PRTR5V0U2X" x="25.9" y="10" rot="MR270">
+<element name="U4" library="Volks73-NXPSemiconductors" package="SOT-143B" value="PRTR5V0U2X,215" x="25.9" y="10" rot="MR270">
 <attribute name="MANUFACTURER" value="NXP Semiconductors" x="25.9" y="10" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="OPERATING_TEMPERATURE" value="-40C ~ 85C" x="25.9" y="10" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="PART_NUMBER" value="PRTR5V0U2X,215" x="25.9" y="10" size="1.778" layer="28" rot="MR270" display="off"/>
@@ -4429,7 +4427,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VOLTAGE_CLAMPING" value="-" x="25.9" y="10" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="SJ1" library="SparkFun-Retired" package="SJ_2" value="" x="12" y="47.7" rot="MR180"/>
-<element name="U5" library="Volks73-NXPSemiconductors" package="SOT-143B" value="PRTR5V0U2X" x="10.2" y="25" rot="R90">
+<element name="U5" library="Volks73-NXPSemiconductors" package="SOT-143B" value="PRTR5V0U2X,215" x="10.2" y="25" rot="R90">
 <attribute name="MANUFACTURER" value="NXP Semiconductors" x="10.2" y="25" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OPERATING_TEMPERATURE" value="-40C ~ 85C" x="10.2" y="25" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_NUMBER" value="PRTR5V0U2X,215" x="10.2" y="25" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4455,7 +4453,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="SUPPLIER_NAME" value="Digi-Key" x="10.2" y="25" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VOLTAGE_CLAMPING" value="-" x="10.2" y="25" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="Q1" library="adafruit" package="SM49" value="" x="22.5" y="24.5" rot="R180">
+<element name="Q1" library="adafruit" package="SM49" value="FOXSDLF/120-20" x="22.5" y="24.5" rot="R180">
 <attribute name="OC_NEWARK" value="unknown" x="22.5" y="24.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="22.5" y="24.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="22.5" y="24.5" size="1.778" layer="27" rot="R180" display="off"/>
