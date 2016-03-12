@@ -142,6 +142,7 @@ v0.2</text>
 <wire x1="16" y1="7.5" x2="16" y2="0.8" width="0.6096" layer="21"/>
 <wire x1="16" y1="0.8" x2="6" y2="0.8" width="0.6096" layer="21"/>
 <wire x1="6" y1="0.8" x2="6" y2="7.5" width="0.6096" layer="21"/>
+<text x="-4" y="18.4" size="1.778" layer="21" rot="R90">never ordered</text>
 </plain>
 <libraries>
 <library name="con-lsta">

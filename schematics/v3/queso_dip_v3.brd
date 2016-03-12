@@ -157,6 +157,8 @@ v0.3</text>
 <circle x="37" y="44.6" radius="1.204159375" width="0.254" layer="26"/>
 <circle x="39.6" y="44.6" radius="1.204159375" width="0.254" layer="26"/>
 <circle x="37" y="19.2" radius="1.204159375" width="0.254" layer="26"/>
+<text x="-8.4" y="41.1" size="1.778" layer="21" rot="R270">Order Placed On: 2016/03/10
+Seeedstudio</text>
 </plain>
 <libraries>
 <library name="con-lsta">

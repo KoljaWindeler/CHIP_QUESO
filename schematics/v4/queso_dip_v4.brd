@@ -159,6 +159,7 @@ v0.4</text>
 <circle x="37" y="19.2" radius="1.204159375" width="0.254" layer="26"/>
 <text x="24.4" y="27.2" size="1.27" layer="25">A  4  3  2  1</text>
 <circle x="4" y="31.9" radius="1.204159375" width="0.254" layer="26"/>
+<text x="-3.1" y="10.7" size="1.778" layer="23" rot="R90">fixed LEDs, never ordered</text>
 </plain>
 <libraries>
 <library name="con-lsta">
@@ -4653,9 +4654,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="19.1" y1="39.7" x2="19.2" y2="39.7" width="0.254" layer="16"/>
 <wire x1="19.0507" y1="42.4501" x2="19.2" y2="42.3008" width="0.254" layer="1"/>
 <wire x1="19.2" y1="42.3008" x2="19.2" y2="39.7" width="0.254" layer="1"/>
-<wire x1="33.2" y1="20.5" x2="33.3" y2="23.5" width="0" layer="19" extent="1-1"/>
-<wire x1="17.7" y1="3.7" x2="17.62" y2="3.3" width="0" layer="19" extent="1-1"/>
-<wire x1="11.8" y1="15.7" x2="11.5" y2="17.2" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="INT0">
 <contactref element="SV3" pad="20"/>
