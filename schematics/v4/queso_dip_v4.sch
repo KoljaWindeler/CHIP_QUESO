@@ -577,87 +577,6 @@ http://www.jfd-ic.com/Documents/FE1.1s%20Data%20Sheet%20%28Rev.%201.0%29.pdf</de
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Connectors">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="USB-MINIB">
-<description>&lt;b&gt;USB Series Mini-B Surface Mounted&lt;/b&gt;</description>
-<wire x1="-1.3" y1="3.8" x2="0.8" y2="3.8" width="0.2032" layer="21"/>
-<wire x1="3.3" y1="3.1" x2="3.3" y2="2.2" width="0.2032" layer="21"/>
-<wire x1="3.3" y1="-2.2" x2="3.3" y2="-3.1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="-3.8" x2="-1.3" y2="-3.8" width="0.2032" layer="21"/>
-<wire x1="-5.9" y1="3.8" x2="-5.9" y2="-3.8" width="0.2032" layer="51"/>
-<wire x1="-5.9" y1="-3.8" x2="-4.5" y2="-3.8" width="0.2032" layer="51"/>
-<wire x1="-5.9" y1="3.8" x2="-4.5" y2="3.8" width="0.2032" layer="51"/>
-<smd name="D+" x="2.5" y="0" dx="2.5" dy="0.5" layer="1"/>
-<smd name="D-" x="2.5" y="0.8" dx="2.5" dy="0.5" layer="1"/>
-<smd name="GND" x="2.5" y="-1.6" dx="2.5" dy="0.5" layer="1"/>
-<smd name="ID" x="2.5" y="-0.8" dx="2.5" dy="0.5" layer="1"/>
-<smd name="MTN3" x="-3" y="-4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="MTN1" x="-3" y="4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="MTN4" x="2.5" y="-4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="MTN2" x="2.5" y="4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="VBUS" x="2.5" y="1.6" dx="2.5" dy="0.5" layer="1"/>
-<text x="-3.81" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-3.81" y="0" size="0.4064" layer="27">&gt;VALUE</text>
-<hole x="0" y="2.2" drill="0.9"/>
-<hole x="0" y="-2.2" drill="0.9"/>
-</package>
-</packages>
-<symbols>
-<symbol name="USB-5PIN">
-<wire x1="7.62" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="12.7" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
-<text x="5.334" y="1.778" size="2.54" layer="94" rot="R90">USB</text>
-<pin name="D+" x="-2.54" y="5.08" visible="pad" length="short"/>
-<pin name="D-" x="-2.54" y="7.62" visible="pad" length="short"/>
-<pin name="VBUS" x="-2.54" y="10.16" visible="pad" length="short"/>
-<pin name="GND" x="-2.54" y="0" visible="pad" length="short"/>
-<pin name="ID" x="-2.54" y="2.54" visible="pad" length="short"/>
-<pin name="MTN1" x="2.54" y="15.24" visible="pad" length="short" rot="R270"/>
-<pin name="MTN2" x="5.08" y="15.24" visible="pad" length="short" rot="R270"/>
-<pin name="MTN3" x="2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
-<pin name="MTN4" x="5.08" y="-5.08" visible="pad" length="short" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="USB-MINIB">
-<description>&lt;b&gt;Mini-USB "B" connector with 5th pin broken out.&lt;/b&gt;&lt;p&gt;
-Created new symbol breaking out 5th "ID" pin in mini/micro USB connector spec.  See: http://en.wikipedia.org/wiki/Mini_usb#Cables.  Uses same footprint as 4-pin symbol.&lt;p&gt;
- 
-
-Also added pins to connect to mounting / shield pads if required (probably not generally needed as signals aren't shielded once they leave the connector).</description>
-<gates>
-<gate name="G$1" symbol="USB-5PIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-5PIN" package="USB-MINIB">
-<connects>
-<connect gate="G$1" pin="D+" pad="D+"/>
-<connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="ID" pad="ID"/>
-<connect gate="G$1" pin="MTN1" pad="MTN3"/>
-<connect gate="G$1" pin="MTN2" pad="MTN1"/>
-<connect gate="G$1" pin="MTN3" pad="MTN2"/>
-<connect gate="G$1" pin="MTN4" pad="MTN4"/>
-<connect gate="G$1" pin="VBUS" pad="VBUS"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="wirepad">
 <description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -12028,6 +11947,102 @@ Based on the datasheets for the following products.&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="daspilker">
+<description>&lt;b&gt;Daniel Spilker's Eagle Library&lt;/b&gt;
+&lt;p&gt; The latest version of this library can be downloaded at
+&lt;a href="https://github.com/daspilker/daspilker-eagle-library"&gt;https://github.com/daspilker/daspilker-eagle-library&lt;/a&gt;.
+&lt;p&gt;
+&lt;a href="http://daniel-spilker.com/"&gt;http://daniel-spilker.com/&lt;/a&gt;</description>
+<packages>
+<package name="FCI-10103594-0001LF">
+<description>FCI 10103594-0001LF RA SMD USB Micro Type B Receptable</description>
+<wire x1="-3.75" y1="0" x2="-3.75" y2="5" width="0.127" layer="21"/>
+<wire x1="3.75" y1="5" x2="3.75" y2="0" width="0.127" layer="21"/>
+<smd name="5" x="1.3" y="4.525" dx="1.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="1" x="-1.3" y="4.525" dx="1.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="4" x="0.65" y="4.525" dx="1.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="3" x="0" y="4.525" dx="1.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="2" x="-0.65" y="4.525" dx="1.75" dy="0.4" layer="1" rot="R90"/>
+<text x="-4" y="0.1" size="0.762" layer="25" rot="R90">&gt;NAME</text>
+<text x="4" y="0.1" size="0.762" layer="27" rot="R90" align="top-left">&gt;VALUE</text>
+<pad name="P$3" x="-2.725" y="1.7" drill="1.2" diameter="2" shape="square"/>
+<pad name="P$4" x="2.725" y="1.7" drill="1.2" diameter="2" shape="square"/>
+<hole x="-2.425" y="4.73" drill="1.05"/>
+<hole x="2.425" y="4.73" drill="1.05"/>
+<wire x1="-3.75" y1="5" x2="-3.25" y2="5" width="0.127" layer="21"/>
+<wire x1="3.75" y1="5" x2="3.25" y2="5" width="0.127" layer="21"/>
+</package>
+<package name="HIROSE-ZX62-AB-5PA(11)">
+<smd name="P$3" x="0" y="4.125" dx="0.4" dy="1.35" layer="16" rot="R180"/>
+<smd name="P$2" x="0.65" y="4.125" dx="0.4" dy="1.35" layer="16" rot="R180"/>
+<smd name="P$1" x="1.3" y="4.125" dx="0.4" dy="1.35" layer="16" rot="R180"/>
+<smd name="P$4" x="-0.65" y="4.125" dx="0.4" dy="1.35" layer="16" rot="R180"/>
+<smd name="P$5" x="-1.3" y="4.125" dx="0.4" dy="1.35" layer="16" rot="R180"/>
+<rectangle x1="2.05" y1="3.2" x2="4.15" y2="4.8" layer="16" rot="R180"/>
+<rectangle x1="-4.15" y1="3.2" x2="-2.05" y2="4.8" layer="16" rot="R180"/>
+<rectangle x1="-2.15" y1="0.5" x2="-0.25" y2="2.4" layer="16" rot="R180"/>
+<rectangle x1="0.25" y1="0.5" x2="2.15" y2="2.4" layer="16" rot="R180"/>
+<rectangle x1="-4.9" y1="0.5" x2="-3.1" y2="2.4" layer="16" rot="R180"/>
+<rectangle x1="3.1" y1="0.5" x2="4.9" y2="2.4" layer="16" rot="R180"/>
+<rectangle x1="-4.15" y1="0" x2="4.15" y2="3.45" layer="42" rot="R180"/>
+<rectangle x1="-4.25" y1="3.1" x2="-1.95" y2="4.9" layer="30"/>
+<rectangle x1="1.95" y1="3.1" x2="4.3" y2="4.9" layer="30"/>
+<rectangle x1="-5" y1="0.4" x2="-3" y2="2.5" layer="30"/>
+<rectangle x1="3" y1="0.4" x2="5" y2="2.5" layer="30"/>
+<rectangle x1="-2.25" y1="0.4" x2="-0.15" y2="2.5" layer="30"/>
+<rectangle x1="0.15" y1="0.4" x2="2.25" y2="2.5" layer="30"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MICROB-PLUG">
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.508" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.508" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.508" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.508" layer="94"/>
+<text x="-4.826" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-9.906" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VCC" x="-7.62" y="5.08" length="short"/>
+<pin name="D-" x="-7.62" y="2.54" length="short"/>
+<pin name="D+" x="-7.62" y="0" length="short"/>
+<pin name="ID" x="-7.62" y="-2.54" length="short"/>
+<pin name="GND" x="-7.62" y="-5.08" length="short"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="USB-RECEPTABLE" prefix="JP">
+<description>&lt;b&gt;USB Receptable&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="MICROB-PLUG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FCI-10103594-0001LF">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="ID" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-HIROSE-ZX62-AB-5PA(11)" package="HIROSE-ZX62-AB-5PA(11)">
+<connects>
+<connect gate="G$1" pin="D+" pad="P$4"/>
+<connect gate="G$1" pin="D-" pad="P$2"/>
+<connect gate="G$1" pin="GND" pad="P$5"/>
+<connect gate="G$1" pin="ID" pad="P$3"/>
+<connect gate="G$1" pin="VCC" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12042,7 +12057,6 @@ Based on the datasheets for the following products.&lt;br&gt;
 <part name="SV3" library="con-lsta" deviceset="FE18-2" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="imcom" deviceset="FE1.1S" device=""/>
-<part name="U$8" library="SparkFun-Connectors" deviceset="USB-MINIB" device="-5PIN" value="10118194-0001LF"/>
 <part name="PAD1" library="wirepad" deviceset="WIREPAD" device="3,17/1,3"/>
 <part name="PAD2" library="wirepad" deviceset="WIREPAD" device="3,17/1,3"/>
 <part name="U$9" library="power_supply" deviceset="MP1584EN" device=""/>
@@ -12069,7 +12083,6 @@ Based on the datasheets for the following products.&lt;br&gt;
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="2.7k"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
@@ -12112,6 +12125,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <part name="P+10" library="supply1" deviceset="VCC" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
+<part name="JP2" library="daspilker" deviceset="USB-RECEPTABLE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12166,7 +12180,6 @@ Close right = input is 7 - 28V</text>
 <instance part="SV3" gate="G$1" x="378.46" y="198.12"/>
 <instance part="GND9" gate="1" x="355.6" y="213.36"/>
 <instance part="U$1" gate="G$1" x="96.52" y="182.88"/>
-<instance part="U$8" gate="G$1" x="101.6" y="83.82" rot="R270"/>
 <instance part="PAD1" gate="G$1" x="279.4" y="124.46"/>
 <instance part="PAD2" gate="G$1" x="279.4" y="116.84"/>
 <instance part="U$9" gate="G$1" x="368.3" y="129.54"/>
@@ -12193,7 +12206,6 @@ Close right = input is 7 - 28V</text>
 <instance part="GND8" gate="1" x="60.96" y="149.86"/>
 <instance part="GND10" gate="1" x="53.34" y="149.86"/>
 <instance part="GND11" gate="1" x="86.36" y="73.66"/>
-<instance part="GND12" gate="1" x="124.46" y="73.66"/>
 <instance part="R1" gate="G$1" x="71.12" y="175.26"/>
 <instance part="R3" gate="G$1" x="43.18" y="187.96" rot="R270"/>
 <instance part="R4" gate="G$1" x="35.56" y="187.96" rot="R270"/>
@@ -12242,6 +12254,7 @@ Close right = input is 7 - 28V</text>
 <instance part="GND21" gate="1" x="93.98" y="215.9"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="320.04" y="0"/>
+<instance part="JP2" gate="G$1" x="106.68" y="63.5" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -12363,29 +12376,11 @@ Close right = input is 7 - 28V</text>
 <wire x1="53.34" y1="152.4" x2="53.34" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$8" gate="G$1" pin="MTN4"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="96.52" y1="78.74" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="78.74" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="MTN3"/>
-<wire x1="96.52" y1="81.28" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="81.28" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="GND"/>
-<wire x1="101.6" y1="86.36" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="88.9" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
-<junction x="86.36" y="81.28"/>
-<junction x="86.36" y="78.74"/>
-</segment>
-<segment>
-<pinref part="U$8" gate="G$1" pin="MTN2"/>
-<pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="116.84" y1="78.74" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="78.74" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="MTN1"/>
-<wire x1="116.84" y1="81.28" x2="124.46" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="81.28" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
-<junction x="124.46" y="78.74"/>
+<wire x1="86.36" y1="88.9" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="G$1" pin="GND"/>
+<wire x1="101.6" y1="71.12" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VSS"/>
@@ -13187,8 +13182,6 @@ Close right = input is 7 - 28V</text>
 </net>
 <net name="DPU" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="D+"/>
-<wire x1="106.68" y1="86.36" x2="106.68" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="96.52" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="DPU"/>
 <wire x1="73.66" y1="96.52" x2="73.66" y2="154.94" width="0.1524" layer="91"/>
@@ -13197,12 +13190,12 @@ Close right = input is 7 - 28V</text>
 <wire x1="71.12" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="68.58" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
 <junction x="73.66" y="96.52"/>
+<pinref part="JP2" gate="G$1" pin="D+"/>
+<wire x1="106.68" y1="71.12" x2="106.68" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DMU" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="D-"/>
-<wire x1="109.22" y1="86.36" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="99.06" x2="76.2" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="99.06" x2="76.2" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="DMU"/>
@@ -13212,6 +13205,8 @@ Close right = input is 7 - 28V</text>
 <wire x1="76.2" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
 <junction x="76.2" y="99.06"/>
 <junction x="76.2" y="99.06"/>
+<pinref part="JP2" gate="G$1" pin="D-"/>
+<wire x1="109.22" y1="71.12" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -13369,10 +13364,10 @@ Close right = input is 7 - 28V</text>
 </net>
 <net name="V_UP" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="VBUS"/>
-<wire x1="111.76" y1="86.36" x2="111.76" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="99.06" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
 <label x="114.3" y="99.06" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="VCC"/>
+<wire x1="111.76" y1="71.12" x2="111.76" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VBUSM"/>
