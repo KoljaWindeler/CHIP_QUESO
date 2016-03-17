@@ -11958,6 +11958,7 @@ Copyright: Würth Elektronik</description>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="K1" library="Wuerth_Elektronik_eiCan_Communication_Connectors_STENCIL" deviceset="61400826021" device=""/>
 <part name="K2" library="Wuerth_Elektronik_eiCan_Communication_Connectors_STENCIL" deviceset="61400826021" device=""/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12086,6 +12087,7 @@ Close right = input is 7 - 28V</text>
 <instance part="FRAME1" gate="G$2" x="320.04" y="0"/>
 <instance part="K1" gate="G$1" x="256.54" y="157.48"/>
 <instance part="K2" gate="G$1" x="256.54" y="121.92"/>
+<instance part="GND14" gate="1" x="45.72" y="149.86"/>
 </instances>
 <busses>
 </busses>
@@ -12295,6 +12297,12 @@ Close right = input is 7 - 28V</text>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="GND21" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="175.26" x2="45.72" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="45.72" y1="175.26" x2="45.72" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INT0" class="0">
@@ -13051,10 +13059,6 @@ Close right = input is 7 - 28V</text>
 <wire x1="81.28" y1="167.64" x2="66.04" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="167.64" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
 <junction x="66.04" y="170.18"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="175.26" x2="53.34" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="175.26" x2="53.34" y2="170.18" width="0.1524" layer="91"/>
-<junction x="53.34" y="170.18"/>
 </segment>
 </net>
 <net name="DPU" class="0">

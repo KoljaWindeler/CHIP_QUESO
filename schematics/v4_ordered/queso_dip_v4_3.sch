@@ -13622,6 +13622,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <part name="U$4" library="logo" deviceset="LOGO_3X3_COPPER" device=""/>
 <part name="U$2" library="logo" deviceset="LOGO_3X3_COPPER" device=""/>
 <part name="U$5" library="logo" deviceset="LOGO_10X10_SILK" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13754,6 +13755,7 @@ Close right = input is 7 - 28V</text>
 <instance part="U$4" gate="G$1" x="91.44" y="2.54"/>
 <instance part="U$2" gate="G$1" x="5.08" y="2.54"/>
 <instance part="U$5" gate="G$1" x="177.8" y="2.54"/>
+<instance part="GND12" gate="1" x="43.18" y="149.86"/>
 </instances>
 <busses>
 </busses>
@@ -13941,6 +13943,12 @@ Close right = input is 7 - 28V</text>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="GND21" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="175.26" x2="43.18" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="43.18" y1="175.26" x2="43.18" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INT0" class="0">
@@ -14673,10 +14681,6 @@ Close right = input is 7 - 28V</text>
 <wire x1="81.28" y1="167.64" x2="66.04" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="167.64" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
 <junction x="66.04" y="170.18"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="175.26" x2="53.34" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="175.26" x2="53.34" y2="170.18" width="0.1524" layer="91"/>
-<junction x="53.34" y="170.18"/>
 </segment>
 </net>
 <net name="DPU" class="0">
